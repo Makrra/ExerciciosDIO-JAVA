@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="001_Exercícios Innovation One (Java)" />
         <module name="001_Exercícios Innovation One" />
+        <module name="ExecDIOJAVA" />
       </profile>
     </annotationProcessing>
   </component>
