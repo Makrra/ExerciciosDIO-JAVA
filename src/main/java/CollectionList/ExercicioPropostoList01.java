@@ -71,5 +71,6 @@ public class ExercicioPropostoList01 {
         listaVazia = nomes.isEmpty();
         System.out.println("---------> " + listaVazia);
 
+
     }
 }
