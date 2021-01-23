@@ -17,6 +17,7 @@ package CollectionSet;
 * Não permite mudança de ordenação
 * */
 
+import java.util.Collection;
 import java.util.HashSet;
 
 public class ExercicioPropostoSet01 {
@@ -48,6 +49,7 @@ public class ExercicioPropostoSet01 {
         //Verificando se o Set está vazio
 //        numerosInteiros.clear();
         System.out.println("----> O Set está vazio? " + numerosInteiros.isEmpty());
+
 
     }
 }
