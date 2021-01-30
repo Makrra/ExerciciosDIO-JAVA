@@ -10,13 +10,9 @@ package Comparators.ExercicioProposto;
 * - Ordene coleções TreeSet e TreeMap
 * */
 
-import Comparators.Exemplos.Estudante;
-
 import java.util.*;
 
-import static java.util.Collections.sort;
-
-public class Livraria {
+public class LivrariaList {
     public static void main(String[] args) {
         List<ClasseLivro> controleLivros = new ArrayList<>();
 
@@ -35,12 +31,12 @@ public class Livraria {
         // ---> Listando os Livros
 //        System.out.println(controleLivro.get(0));
 
-        // ---> Ordenando através de Comparator
+        // ---> Ordenando através de Interface Comparator (Static Methods)
 //        System.out.println("--- Id Crescente ---");
-//        Collections.sort(controleLivro, new ExercicioPropostoComparatorGetIdCrescente());
+//        Collections.sort(controleLivro, new ComparatorGetIdCrescente());
 
 //        System.out.println("--- Nome Autor Ordem Alfabética Crescente ---");
-//        Collections.sort(controleLivro, new ExercicioPropostoComparatorNomeautorCrescente());
+//        Collections.sort(controleLivro, new ComparatorNomeautorCrescente());
 
 //        System.out.println("--- Nome Livro Ordem Alfabética Decrescente ---");
 //        Collections.sort(controleLivro, new ComparatorNomeLivroDecrescente());
@@ -54,8 +50,17 @@ public class Livraria {
 //        System.out.println("--- Valor do Imposto do Maior para o Menor ---");
 //        Collections.sort(controleLivro, new ComparatorLucroDecrescente());
 
-        // ---> Ordenando através de Comparable (Método de Referência)
-        Collections.sort(Comparator.comparingInt(ClasseLivro::getId));
+        // ---> Ordenação através de Comparator da Classe (Method Reference - comparingInt)
+//        controleLivros.sort(Comparator.comparingInt(ClasseLivro::getId));
+
+        // ---> Ordenação reversa através de Comparator da Classe (Method Reference - Lambda)
+//        controleLivros.sort((first, second) -> second.getId() - first.getId());
+
+        // ---> Ordenação através de Comparator da Classe (Method Reference - Lambda)
+//        controleLivros.sort((first, second) -> first.getId() - second.getId());
+
+        // ---> Ordenação através de Comparable (Method Reference - Collections)
+//        Collections.sort(controleLivros);
 
         // ---> Navegando pelos livros
         Iterator<ClasseLivro> iterator = controleLivros.iterator();

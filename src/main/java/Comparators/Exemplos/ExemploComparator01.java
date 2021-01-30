@@ -51,7 +51,7 @@ public class ExemploComparator01 {
         System.out.println(estudantes);
         System.out.println("");
 
-        System.out.println("--- Ordem Natural dos Números - Idades (Interface Compartor) ---");
+        System.out.println("--- Ordem Natural dos Números - Idades (Interface Comparator) ---");
         Collections.sort(estudantes);
         System.out.println(estudantes);
         System.out.println("");
